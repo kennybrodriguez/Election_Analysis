@@ -1,6 +1,6 @@
 # Election_Analysis
 
-##Project Overview
+## Project Overview
 Colorado Board of Elections employee has given taskes to complete the election audit of a recent local congressional election.
 
 1. Calculate the total number of votes cast
@@ -13,7 +13,7 @@ Colorado Board of Elections employee has given taskes to complete the election a
 - Data source: election_results.csv
 - software: Python 3.7.6 Visual Studio Code 1.64
 
-##Summary
+## Summary
 Analysis of election shows that
 Election Results
 -------------------------
