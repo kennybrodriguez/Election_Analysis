@@ -1,7 +1,7 @@
 # Election_Analysis
 
-##Project Overview
-Colorado Board of Elections employee has given taskes to complete the election audit of a recent local congressional election.
+## Project Overview
+This project was meant to audit the results of a U.S. Congressional precinct in Colorado. The aim of the audit was to help provide data on how many votes each candidate received and to help determine which county had the highest voter turnout. Voter data was imported from a 'CSV' and then each row was iterated over to obtain voter data. 
 
 1. Calculate the total number of votes cast
 2. Get a complete list of candidates who received votes
@@ -13,17 +13,45 @@ Colorado Board of Elections employee has given taskes to complete the election a
 - Data source: election_results.csv
 - software: Python 3.7.6 Visual Studio Code 1.64
 
-##Summary
-Analysis of election shows that
+## Election Audit Results
+
 Election Results
 -------------------------
-Total Votes: 369,711
+* Total Votes: 369,711
+
+* Jefferson: 10.5% (38,855)
+* Denver: 82.8% (306,055)
+* Arapahoe: 6.7% (24,801)
+* Largest County Turnout: Denver
 -------------------------
-Charles Casper Stockham: 23.0% (85,213)
-Diana DeGette: 73.8% (272,892)
-Raymon Anthony Doane: 3.1% (11,606)
+* Charles Casper Stockham: 23.0% (85,213)
+* Diana DeGette: 73.8% (272,892)
+* Raymon Anthony Doane: 3.1% (11,606)
 -------------------------
-Winner: Diana DeGette
-Winning Vote Count: 272,892
-Winning Percentage: 73.8%
--------------------------
+* Winner: Diana DeGette
+* Winning Vote Count: 272,892
+* Winning Percentage: 73.8%
+
+![Results](/Resources/results2.PNG)
+
+## Election Audit Summary
+This code is designed to be run with voter data in a csv format and can be refactored to work with any election. As of now it is designed to be run for voter data in regards to counties. This can be changed if more data is provided. We can add if statements within the iterations of each row to help with other classifications of data. Such as districts, zip codes, age of voters, and etc. 
+
+- Example: 
+	districts = []
+	district_votes = {}
+
+	if district_name not in districts:
+		districts.append(district_name)
+		
+		district_votes[district_name] = 0
+
+    county_votes[county_name] += 1
+
+
+- Example 2:
+	Also just changing the labels to match up with the data provided. Whether it's a state election, county election, etc.
+
+	state_results = (f'{state}: {state_percentage:.1f}% ({state_votes[state]:,})\n')
+
+
