@@ -1,7 +1,9 @@
 # Election_Analysis
 
 ## Project Overview
+
 This project was meant to audit the results of a U.S. Congressional precinct in Colorado. The aim of the audit was to help provide data on how many votes each candidate received and to help determine which county had the highest voter turnout. Voter data was imported from a 'CSV' and then each row was iterated over to obtain voter data. 
+
 
 1. Calculate the total number of votes cast
 2. Get a complete list of candidates who received votes
@@ -14,6 +16,11 @@ This project was meant to audit the results of a U.S. Congressional precinct in 
 - software: Python 3.7.6 Visual Studio Code 1.64
 
 ## Election Audit Results
+
+=======
+## Summary
+Analysis of election shows that
+
 
 Election Results
 -------------------------
@@ -38,6 +45,7 @@ Election Results
 This code is designed to be run with voter data in a csv format and can be refactored to work with any election. As of now it is designed to be run for voter data in regards to counties. This can be changed if more data is provided. We can add if statements within the iterations of each row to help with other classifications of data. Such as districts, zip codes, age of voters, and etc. 
 
 - Example: 
+'''
 	districts = []
 	district_votes = {}
 
@@ -46,12 +54,12 @@ This code is designed to be run with voter data in a csv format and can be refac
 		
 		district_votes[district_name] = 0
 
-    county_votes[county_name] += 1
-
+'''
 
 - Example 2:
-	Also just changing the labels to match up with the data provided. Whether it's a state election, county election, etc.
-
+	Also, changing the labels to match up with the data provided and/or being analyzed. Whether it's a state election, county election, etc. This helps make it easier to decipher the results of the analysis. 
+	'''
 	state_results = (f'{state}: {state_percentage:.1f}% ({state_votes[state]:,})\n')
+	'''
 
 
