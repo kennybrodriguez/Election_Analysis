@@ -45,7 +45,7 @@ Election Results
 This code is designed to be run with voter data in a csv format and can be refactored to work with any election. As of now it is designed to be run for voter data in regards to counties. This can be changed if more data is provided. We can add if statements within the iterations of each row to help with other classifications of data. Such as districts, zip codes, age of voters, and etc. 
 
 - Example: 
-'''
+```
 	districts = []
 	district_votes = {}
 
@@ -54,12 +54,12 @@ This code is designed to be run with voter data in a csv format and can be refac
 		
 		district_votes[district_name] = 0
 
-'''
+```
 
 - Example 2:
 	Also, changing the labels to match up with the data provided and/or being analyzed. Whether it's a state election, county election, etc. This helps make it easier to decipher the results of the analysis. 
-	'''
+	```
 	state_results = (f'{state}: {state_percentage:.1f}% ({state_votes[state]:,})\n')
-	'''
+	```
 
 
